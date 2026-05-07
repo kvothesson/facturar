@@ -1,0 +1,14 @@
+{
+  "name": "facturar",
+  "version": "1.0.0",
+  "description": "Facturacion electronica para Monotributo via PyARCA — emite facturas C y E contra ARCA desde lenguaje natural",
+  "author": {
+    "name": "kvothesson"
+  },
+  "skills": [
+    {
+      "name": "facturar",
+      "path": "skills/facturar/SKILL.md"
+    }
+  ]
+}
