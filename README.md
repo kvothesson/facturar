@@ -1,16 +1,30 @@
 # facturar
 
-Plugin de Claude Code — facturacion electronica para Monotributo argentino.
+Facturacion electronica para Monotributo argentino — compatible con **Claude Code** y **OpenAI Codex**.
 
 Wrapper de lenguaje natural sobre [PyARCA](https://github.com/GeraCollante/PyARCA). Le decis a Claude "emitir factura por $1.500.000 a Empresa XYZ por desarrollo de software abril 2026" y el instala lo que falta, configura lo que no esta configurado y emite el comprobante.
 
 ## Instalacion
+
+### Claude Code
 
 ```bash
 claude --plugin-dir /ruta/a/facturar
 ```
 
 O instalar desde el [marketplace de ar-plugins](https://github.com/kvothesson/ar-plugins).
+
+### OpenAI Codex
+
+No requiere instalacion de plugin. Codex lee `AGENTS.md` automaticamente al abrirse en este directorio (o cualquier directorio padre).
+
+```bash
+git clone https://github.com/kvothesson/facturar ~/facturar
+cd ~/facturar
+codex   # AGENTS.md se carga automaticamente
+```
+
+Luego decirle en lenguaje natural: *"emitir factura por $1.500.000 a Empresa XYZ por desarrollo de software abril 2026"*.
 
 ## Setup automatico
 
@@ -37,7 +51,9 @@ Para el certificado digital (se obtiene en ARCA una sola vez), Claude te guia pa
 
 ## Comandos y ejemplos
 
-### `/facturar:facturar factura`
+> En Claude Code se usan como slash commands. En Codex se describen en lenguaje natural — el agente los detecta y ejecuta igual.
+
+### Factura C — `/facturar:facturar factura` (Claude Code) / "emitir factura" (Codex)
 
 Emitir Factura C (mercado interno).
 
@@ -56,7 +72,7 @@ Ambiente: Produccion
 
 ---
 
-### `/facturar:facturar nota-credito`
+### Nota de Credito C — `/facturar:facturar nota-credito` (Claude Code) / "nota de credito" (Codex)
 
 Anular una Factura C con Nota de Credito C.
 
@@ -75,7 +91,7 @@ Ambiente: Produccion
 
 ---
 
-### `/facturar:facturar factura-e`
+### Factura E — `/facturar:facturar factura-e` (Claude Code) / "factura de exportacion" (Codex)
 
 Emitir Factura E (exportacion de servicios al exterior). Claude fetchea el tipo de cambio oficial automaticamente si no lo indicás.
 
@@ -94,7 +110,7 @@ Ambiente: Produccion
 
 ---
 
-### `/facturar:facturar consultar`
+### Consultar — `/facturar:facturar consultar` (Claude Code) / "consultar comprobante N°5" (Codex)
 
 Consultar un comprobante especifico.
 
@@ -111,7 +127,7 @@ Estado:      Vigente
 
 ---
 
-### `/facturar:facturar listar`
+### Listar — `/facturar:facturar listar` (Claude Code) / "listar mis facturas" (Codex)
 
 Listar todos los comprobantes emitidos.
 
