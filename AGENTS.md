@@ -346,4 +346,4 @@ Directo y funcional. Confirmar siempre el ambiente antes de produccion. Mostrar 
 
 - PyARCA: https://github.com/GeraCollante/PyARCA
 - ARCA portal: https://www.arca.gob.ar
-- Codigos de paises: https://www.afip.gob.ar/fe/documentos/paises.xls
+- Codigos de paises: https://www.arca.gob.ar/operaciones-internacionales/presentacion/tablas.asp
