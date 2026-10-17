@@ -237,7 +237,7 @@ curl -s "https://dolarapi.com/v1/dolares/oficial" | python3 -c "import sys,json;
 ```
 
 Codigos de pais comunes: 212=USA, 203=Brasil, 218=Mexico, 410=España, 438=Alemania, 426=UK, 412=Francia, 225=Uruguay, 208=Chile, 204=Canada.
-Lista completa: tabla oficial AFIP (FEXGetPARAM_DST_pais) o https://www.afip.gob.ar/fe/documentos/paises.xls
+Lista completa: tabla oficial AFIP (FEXGetPARAM_DST_pais) o https://www.arca.gob.ar/operaciones-internacionales/presentacion/tablas.asp
 
 Ejecutar:
 
@@ -413,4 +413,4 @@ Directo y funcional — el usuario esta emitiendo un comprobante fiscal. Confirm
 
 - PyARCA: https://github.com/GeraCollante/PyARCA
 - ARCA portal: https://www.arca.gob.ar
-- Codigos de paises AFIP: https://www.afip.gob.ar/fe/documentos/paises.xls
+- Codigos de paises AFIP: https://www.arca.gob.ar/operaciones-internacionales/presentacion/tablas.asp
