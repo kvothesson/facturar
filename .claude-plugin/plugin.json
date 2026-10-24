@@ -1,14 +1,11 @@
 {
   "name": "facturar",
-  "version": "1.1.1",
-  "description": "Facturacion electronica para Monotributo via PyARCA — emite facturas C y E contra ARCA desde lenguaje natural",
+  "version": "1.1.2",
+  "description": "Facturación electrónica del monotributo contra ARCA (ex AFIP): facturas C y E y notas de crédito. Arranca en homologación y confirma antes de producción.",
   "author": {
     "name": "kvothesson"
   },
-  "skills": [
-    {
-      "name": "facturar",
-      "path": "skills/facturar/SKILL.md"
-    }
-  ]
+  "homepage": "https://github.com/kvothesson/facturar",
+  "repository": "https://github.com/kvothesson/facturar",
+  "license": "MIT"
 }
